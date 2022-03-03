@@ -14,8 +14,6 @@ class HomeController extends Controller
 
     public function product()
     {
-
-        
         //  $product = ['baju','sepatu','kemeja','sendal','topi', 'jaket'];
         //  return view('product', ['product' => $product]);
 
