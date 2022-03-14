@@ -35,7 +35,7 @@
 			        <tr>
 				      <td>{{ $s->id }}</td>
               <td>{{ $s->Produk }}</td>
-              <td><img src="prak2/assets/images/{{ $s->Gambar }}"></td>
+              <td><img src="{{asset('assets/images/'.$s->Gambar)  }}"></td>
               <td>{{ $s->content }}</td>
               <td>{{ $s->Harga }}</td>
 			        </tr>

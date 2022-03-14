@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-use App\Models\produks;
+use App\Models\Produk;
 
 class PageController extends Controller
 {
@@ -13,7 +13,7 @@ class PageController extends Controller
 
     public function home(){
         $data = Produk::all();
-        return view('blog.home', ['title' => 'Home'],['isi' => $data]);
+        return view('blog.home', ['title' => 'Home', 'isi' => $data]);
     }
 
     public function product(){
